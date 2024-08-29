@@ -1,3 +1,5 @@
+let btn=document.getElementsByClassName("btn")[0];
+function game(){
 let randomno1=Math.floor(Math.random()*6+1);
 
 let randomimage1="images/dice"+randomno1+".png";
@@ -25,3 +27,5 @@ else if(randomno1 < randomno2)
 else{
     document.getElementsByTagName("h2")[0].innerHTML="try again!!!";
 }
+}
+btn.addEventListener("click", game);
